@@ -193,6 +193,9 @@
         // the default output format for `.toString()` and `field` value
         format: 'YYYY-MM-DD',
 
+        // A callback for the toString callback
+        toStringCallback: null,
+
         // the initial date to view when first opened
         defaultDate: null,
 
@@ -670,7 +673,7 @@
          */
         toString: function(format)
         {
-            return !isDate(this._d) ? '' : hasMoment ? moment(this._d).format(format || this._o.format) : this._d.toDateString();
+            return !isDate(this._d) ? '' : hasMoment ? moment(this._d).format(format || this._o.format) : null !== this._o.toStringCallback ? this._o.toStringCallback(this._d) : this._d.toDateString();
         },
 
         /**
