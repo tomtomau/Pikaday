@@ -7,8 +7,8 @@
     "calendar",
     "date"
   ],
-  "homepage": "http://dbushell.github.io/Pikaday/",
-  "bugs": "https://github.com/dbushell/Pikaday/issues",
+  "homepage": "https://github.com/tomtomau/Pikaday",
+  "bugs": "https://github.com/tomtomau/Pikaday/issues",
   "licenses": [
     {
       "type": "BSD",
@@ -22,7 +22,7 @@
   "main": "pikaday.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dbushell/Pikaday.git"
+    "url": "https://github.com/tomtomau/Pikaday.git"
   },
   "optionalDependencies": {
     "moment": "2.x"
